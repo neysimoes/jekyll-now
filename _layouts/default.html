@@ -16,23 +16,19 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+    <header class="header">
+        <a href="{{ site.baseurl }}/" class="header-logo">
+            Ney Simões
+        </a>
+        <nav class="menu">
+            <ul>
+                <li class="menu-item"><a href="{{ site.baseurl }}/">Artigos</a></li>
+                <li class="menu-item"><a href="{{ site.baseurl }}/">Vídeos</a></li>
+                <li class="menu-item"><a href="{{ site.baseurl }}/">Sobre</a></li>
+            </ul>
+        </nav>
+        <a href="https://github.com/neysimoes" class="header-github">Github</a>
+    </header>
 
     <div id="main" role="main" class="container">
       {{ content }}

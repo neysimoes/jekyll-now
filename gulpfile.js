@@ -54,6 +54,7 @@ gulp.task('stylus', function() {
   gulp.src('src/styl/style.styl')
     .pipe(plumber())
     .pipe(stylus({
+      'include css': true,
       use: [rupture()]
     }))
     .pipe(postcss([
