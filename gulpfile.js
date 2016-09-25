@@ -51,7 +51,7 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  * Stylus task
  */
 gulp.task('stylus', function() {
-  gulp.src('src/styl/main.styl')
+  gulp.src('src/styl/style.styl')
     .pipe(plumber())
     .pipe(stylus({
       use: [rupture()]
